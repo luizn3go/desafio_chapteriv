@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-03-14T22:38:32.081Z",
-    "end": "2022-03-14T22:38:59.183Z",
-    "duration": 27102,
+    "start": "2022-03-14T22:39:05.716Z",
+    "end": "2022-03-14T22:39:24.269Z",
+    "duration": 18553,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "32f458df-5550-45e8-92fc-c1f3d9377cfe",
+      "uuid": "a33335c9-95e9-4a54-a84b-869414f8258d",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "05f28302-bd74-4b51-be2b-6cb76975e826",
+          "uuid": "27d6ec12-471b-4d0e-8f8a-016c3d149d04",
           "title": "Go to my account ",
           "fullFile": "",
           "file": "",
@@ -38,35 +38,35 @@
               "title": "When user selects Sign in option, Authentication page is loaded",
               "fullTitle": "Go to my account  When user selects Sign in option, Authentication page is loaded",
               "timedOut": null,
-              "duration": 6289,
+              "duration": 4397,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('http://automationpractice.com/index.php');\ncy.get('a.login').click();\ncy.url().should('contain', 'authentication&back=my-account');",
               "err": {},
-              "uuid": "f7a9d817-4150-40a8-aa80-900d80f0a4bc",
-              "parentUUID": "05f28302-bd74-4b51-be2b-6cb76975e826",
+              "uuid": "6b642293-6257-459f-a439-6253af0fa012",
+              "parentUUID": "27d6ec12-471b-4d0e-8f8a-016c3d149d04",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f7a9d817-4150-40a8-aa80-900d80f0a4bc"
+            "6b642293-6257-459f-a439-6253af0fa012"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6289,
+          "duration": 4397,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "27fa2f28-f590-43b7-a599-252ddf630d17",
+          "uuid": "2f1e1b32-cb28-4727-bf5e-d0f946458f79",
           "title": "Open Create account page",
           "fullFile": "",
           "file": "",
@@ -77,29 +77,29 @@
               "title": "When user enter his email and click create an account, a new registration page will be opened and he will be able to registrate himself",
               "fullTitle": "Open Create account page When user enter his email and click create an account, a new registration page will be opened and he will be able to registrate himself",
               "timedOut": null,
-              "duration": 17507,
+              "duration": 8800,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('http://automationpractice.com/index.php?controller=authentication&back=my-account');\ncy.get('#email_create').type(chance.email());\ncy.get('#SubmitCreate').click();\ncy.url().should('contain', 'account-creation');\ncy.get('input#id_gender2').check();\ncy.get('#customer_firstname').type(firstName);\ncy.get('#customer_lastname').type(lastName);\ncy.get('#passwd').type(chance.string({\n  length: 5\n}));\ncy.get('select#days').select('21', {\n  force: true\n});\ncy.get('select#months').select('July', {\n  force: true\n});\ncy.get('select#years').select('1990', {\n  force: true\n});\ncy.get('#address1').type(chance.address());\ncy.get('#city').type(chance.city());\ncy.get('select#id_state').select('Illinois', {\n  force: true\n});\ncy.get('#postcode').type(chance.zip());\ncy.get('#phone_mobile').type(chance.phone({\n  formatted: false\n}));\ncy.get('#alias').type('Home');\ncy.get('#submitAccount').click();\ncy.url().should('contain', 'controller=my-account');",
               "err": {},
-              "uuid": "fd9929d0-6813-4e01-b958-7b77dd298b4c",
-              "parentUUID": "27fa2f28-f590-43b7-a599-252ddf630d17",
+              "uuid": "e08b372e-b027-46c9-948f-31982e8036b9",
+              "parentUUID": "2f1e1b32-cb28-4727-bf5e-d0f946458f79",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fd9929d0-6813-4e01-b958-7b77dd298b4c"
+            "e08b372e-b027-46c9-948f-31982e8036b9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17507,
+          "duration": 8800,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
